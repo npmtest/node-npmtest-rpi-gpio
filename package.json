@@ -1,1 +1,40 @@
-{     "devDependencies": {         "rpi-gpio": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-rpi-gpio",     "homepage": "https://github.com/npmtest/node-npmtest-rpi-gpio",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-rpi-gpio.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [rpi-gpio (v0.8.1)](https://github.com/JamesBarwell/rpi-gpio.js#readme) [![npm package](https://img.shields.io/npm/v/npmtest-rpi-gpio.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-rpi-gpio) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-rpi-gpio.svg)](https://travis-ci.org/npmtest/node-npmtest-rpi-gpio)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "rpi-gpio": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-rpi-gpio",
+    "keywords": [
+        "coverage",
+        "test",
+        "rpi-gpio"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_rpi_gpio.js",
+    "name": "npmtest-rpi-gpio",
+    "nameAlias": "npmtest_rpi_gpio",
+    "nameOriginal": "npmtest-rpi-gpio",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-rpi-gpio.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
