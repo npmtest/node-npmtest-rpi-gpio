@@ -1,4 +1,7 @@
-# test coverage for  [rpi-gpio (v0.8.1)](https://github.com/JamesBarwell/rpi-gpio.js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-rpi-gpio.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-rpi-gpio) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-rpi-gpio.svg)](https://travis-ci.org/npmtest/node-npmtest-rpi-gpio)
+# npmtest-rpi-gpio
+
+#### basic test coverage for  [rpi-gpio (v0.8.1)](https://github.com/JamesBarwell/rpi-gpio.js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-rpi-gpio.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-rpi-gpio) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-rpi-gpio.svg)](https://travis-ci.org/npmtest/node-npmtest-rpi-gpio)
+
 #### Control Raspberry Pi GPIO pins with node.js
 
 [![NPM](https://nodei.co/npm/rpi-gpio.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/rpi-gpio)
